@@ -100,9 +100,7 @@ body, html {
     margin: 0;
     padding: 0;
   }
-  
-/* Added these mobile rules at bottom */
-/* Mobile Styles and Screen Fit */
+  /* Mobile Styles and Screen Fit */
 @media (max-width: 768px) {
     body, html {
         height: 100vh;
@@ -116,21 +114,19 @@ body, html {
     }
 
     #collage {
-        width: 100vw;
-        max-width: 100%;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
-        padding: 10px;
+        width: 100vw;
+        height: 100vh;
         box-sizing: border-box;
+        overflow: hidden;
     }
 
     #collage h2 {
-        font-size: 1.8em;
-        color: rgb(248, 211, 236);
+        font-size: 1.6em;
+        color: rgb(237, 228, 227);
         text-align: center;
         margin: 10px 0;
     }
@@ -142,32 +138,33 @@ body, html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
     }
 
     #collage #actualImageBox {
         width: 80vw;
-        max-width: 300px;
+        max-width: 250px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
     }
 
     #collage #sortable {
         width: 80vw;
         max-width: 300px;
-        list-style-type: none;
-        display: inline-block;
-        margin: 10px;
-        padding: 0;
-        touch-action: none;
-        -webkit-tap-highlight-color: transparent;
+        display: grid;
+        grid-template-columns: repeat(var(--grid-size, 3), 1fr);
+        grid-template-rows: repeat(var(--grid-size, 3), 1fr);
+        gap: 2px;
+        box-sizing: border-box;
     }
 
     #collage #sortable li {
-        width: calc(100% / var(--grid-size, 3));
-        height: calc(100% / var(--grid-size, 3));
-        background-size: 350% 350%;
+        width: 100%;
+        height: 100%;
+        background-size: 300% 300%;
     }
 
     #collage button {
@@ -186,11 +183,5 @@ body, html {
     }
 
     #collage button:hover {
-        background-color: #4e4e4e;
-    }
+     
 
-    #collage #actualImage {
-        height: 250px;
-        width: 250px;
-    }
-}
