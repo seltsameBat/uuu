@@ -76,15 +76,22 @@ function closeMusic() {
 function switchToMusicPage2() {
     helper("musicPage1", 0);
     helper("musicPage2", 1);
+    helper("musicPage3", 0);
     
 }
 
 function switchToMusicPage1() {
     helper("musicPage2", 0);
     helper("musicPage1", 1);
+    helper("musicPage3", 0);
 }
 
-
+function switchToMusicPage3() {
+    helper("musicPage1", 0);
+    helper("musicPage2", 0);
+    helper("musicPage3", 1);
+    
+}
 
 function switchToSecretPage() {
     helper("secretPage", 1);
