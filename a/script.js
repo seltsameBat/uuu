@@ -59,6 +59,8 @@ function closePopUp(id) {
 
 
 function openMusic() {
+     document.getElementById("musicPopup").style.display = "block";
+
     helper("appRow", 0);
     helper("subScreen", 0);
     helper("musicPage1", 1); // Opens the first music page
