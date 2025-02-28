@@ -380,23 +380,30 @@ body, html {
         opacity: 0.7;
     }
 
-#failPopup, #successPopup {
-    position: fixed;  /* Makes sure it appears in front */
+#failPopup, #successPopup, #musicPopup {
+    position: fixed; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* Center it */
+    transform: translate(-50%, -50%);  
     background-color: #ffcccc;
     text-align: center;
     border: 5px double #3d3d5c;
     padding: 20px;
-    z-index: 9999;  /* Ensures it appears on top */
+    z-index: 9999; 
 }
-/* Header Text Styles */
+#musicPopup {
+   
+    background-color: #d85454;
+    
+    border: 5px double #5c3d3d;
+ 
+}
+
 .sidebar .row .col-8 ,.popupWindow .row .col-8 {
-    font-size: 2rem; /* Bigger font size */
-    font-family: 'Press Start 2P', cursive; /* Keep the retro font */
+    font-size: 2rem; 
+    font-family: 'Press Start 2P', cursive;
     color: white;
-    overflow-wrap: break-word; /* Prevents overflow */
+    overflow-wrap: break-word; 
     line-height: 1.2; /* Tightens spacing if needed */
 }
 #appRow {
