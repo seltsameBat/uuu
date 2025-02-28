@@ -12,7 +12,7 @@
 
 /* Manko */
 .link--manko {
-	color: #0c4769;
+	color: #521c13;
 	font-family: 'oswald', serif;
 	font-weight: 900;
 	font-style: italic;
@@ -22,7 +22,7 @@
 }
 
 .link--manko:hover {
-	color: #227094;
+	color: #132752;
 }
 
 .link--manko::before,
@@ -110,4 +110,4 @@
 	.link--manko::before, .link--manko::after { border-width:2px 0 }
   }
   
-  .link--manko:active { color:#227094!important }
+  .link--manko:active { color:#132752!important }
