@@ -80,7 +80,7 @@
    
     }
 #collage button  {
-    background-color:#353232;
+    background-color:#85614c;
     border:1px solid rgb(0, 0, 0);
     display: inline;
     font-size: 14px;
@@ -155,7 +155,7 @@ html, body {
     #collage button {
         min-height: 48px;
         padding: 15px 25px !important;
-        background-color:#353232;
+        background-color:#6e6d6d;
         border:1px solid rgb(0, 0, 0);
         display: inline;
         font-size: 14px;
