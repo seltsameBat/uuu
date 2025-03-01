@@ -351,8 +351,10 @@ class AudioController {
           container.scrollTop = 0; // Resets any scroll movement
       });
   }
-
-  // Call this after level-up
+  stopMusic() {
+    this.bgMusic.stop();
+    this.bgMusic.currentTime = 0; // Ensure it fully resets
+}
   nextLevel() {
     document.getElementById('level-up-popup').classList.remove('active');
     this.currentLevel++;
@@ -361,13 +363,12 @@ class AudioController {
         this.victory();
         this.currentLevel = 1;
     } else {
-        document.documentElement.className = `level-${this.currentLevel}`; // Update grid
+        this.audioController.stopMusic(); // Stop and reset background music
+        document.documentElement.className = `level-${this.currentLevel}`;
         this.startGame();
+        this.audioController.startMusic(); // Restart fresh
     }
-    
-    
-    
-    }
+}
   
 }
   
