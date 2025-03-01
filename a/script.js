@@ -79,6 +79,7 @@ function switchToMusicPage2() {
     helper("musicPage1", 0);
     helper("musicPage2", 1);
     helper("musicPage3", 0);
+    helper("appRow", 0);
     
 }
 
@@ -86,12 +87,14 @@ function switchToMusicPage1() {
     helper("musicPage2", 0);
     helper("musicPage1", 1);
     helper("musicPage3", 0);
+    helper("appRow", 0);
 }
 
 function switchToMusicPage3() {
     helper("musicPage1", 0);
     helper("musicPage2", 0);
     helper("musicPage3", 1);
+    helper("appRow", 0);
     
 }
 
@@ -101,6 +104,7 @@ function switchToSecretPage() {
     helper("secretPage3", 0);
     helper("secretPage4", 0);
     helper("secretPage5", 0);
+    helper("appRow", 0);
     
 }
 
@@ -110,6 +114,7 @@ function switchToSecretPage2() {
     helper("secretPage3", 0);
     helper("secretPage4", 0);
     helper("secretPage5", 0);
+    helper("appRow", 0);
     
 }
 
@@ -120,7 +125,7 @@ function switchToSecretPage3() {
     helper("secretPage3", 1);
     helper("secretPage4", 0);
     helper("secretPage5", 0);
-    
+    helper("appRow", 0);
 }
 function switchToSecretPage4() {
     helper("secretPage",0);
@@ -128,7 +133,7 @@ function switchToSecretPage4() {
     helper("secretPage3", 0);
     helper("secretPage4", 1);
     helper("secretPage5", 0);
-    
+    helper("appRow", 0);
 }
 function switchToSecretPage5() {
     helper("secretPage",0);
@@ -136,7 +141,7 @@ function switchToSecretPage5() {
     helper("secretPage3", 0);
     helper("secretPage4", 0);
     helper("secretPage5", 1);
-    
+    helper("appRow", 0);
 }
 
 
